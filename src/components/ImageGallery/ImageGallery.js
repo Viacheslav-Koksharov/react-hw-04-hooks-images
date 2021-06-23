@@ -24,7 +24,7 @@ export default function ImageGallery({ searchQuery, page }) {
         .then(items => {
           if (items.length === 0) {
             setStatus('rejected');
-            toast.error('Идите в жопу с таким запросом', {
+            toast.error('Try again!', {
               className: `${s.toastify}`,
             });
             return;
